@@ -21,8 +21,8 @@ const users = [
 ];
 
 const siteConfig = {
-  title: 'Test Site', // Title for your website.
-  tagline: 'A website for testing',
+  title: 'Vizir documentation', // Title for your website.
+  tagline: 'Vizir documentation website',
   url: 'https://vizirco.github.io', // Your website URL
   baseUrl: '/documentation/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -44,9 +44,10 @@ const siteConfig = {
 
     {doc: 'faq', label: 'FAQ'},
     {doc: 'tutorials', label: 'tuto'},
-    { href: 'https://www.vizir.co', label: 'Vizir' },
+
     // {page: 'help', label: 'Help'},
-    // {blog: false, label: 'Blog'},
+    {blog: true, label: 'Product Release'},
+    { href: 'https://dashboard.vizir.co', label: 'Se connecter' },
     { languages: true },
   ],
 
@@ -63,6 +64,7 @@ const siteConfig = {
     primaryColor: '#3DBBD8',
     secondaryColor: '#e14d86',
   },
+  useEnglishUrl: true,
   editUrl: 'https://github.com/vizirco/documentation/tree/master/docs/',
 
   /* Custom fonts for website */
