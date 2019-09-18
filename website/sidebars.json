@@ -1,13 +1,13 @@
 {
   "docs": {
-    "Docusaurus": [
-      "doc1",
-      "doc9"
+    "Frenqently Asked Questions": [
+      "faq",
+      "content/createFeature"
     ],
     "First Category": ["doc2"],
     "Second Category": ["doc3"]
   },
-  "docs-other": {
-    "First Category": ["doc4", "doc5"]
+  "tutorials": {
+    "First chatbot": ["tutorials"]
   }
 }

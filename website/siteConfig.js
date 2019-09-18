@@ -10,27 +10,27 @@
 
 // List of projects/orgs using your project for the users page.
 const users = [
-  {
-    caption: 'User1',
-    // You will need to prepend the image path with your baseUrl
-    // if it is not '/', like: '/test-site/img/image.jpg'.
-    image: '/img/vizir-logo-new.png',
-    infoLink: 'https://www.vizir.co',
-    pinned: true,
-  },
+  // {
+  //   caption: 'User1',
+  //   // You will need to prepend the image path with your baseUrl
+  //   // if it is not '/', like: '/test-site/img/image.jpg'.
+  //   image: '/img/vizir-logo-new.png',
+  //   infoLink: 'https://www.vizir.co',
+  //   pinned: true,
+  // },
 ];
 
 const siteConfig = {
   title: 'Test Site', // Title for your website.
   tagline: 'A website for testing',
   url: 'https://vizirco.github.io', // Your website URL
-  baseUrl: '/doc/', // Base URL for your project */
+  baseUrl: '/documentation/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
 
   // Used for publishing and more
-  projectName: 'doc',
+  projectName: 'documentation',
   organizationName: 'vizirco',
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
@@ -38,18 +38,24 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {doc: 'doc1', label: 'Docs'},
-    {doc: 'doc4', label: 'API'},
-    {page: 'help', label: 'Help'},
-    {blog: true, label: 'Blog'},
+
+    { search: true },
+    // { href: 'https://github.com/vizirco', label: 'GitHub' },
+
+    {doc: 'faq', label: 'FAQ'},
+    {doc: 'tutorials', label: 'tuto'},
+    { href: 'https://www.vizir.co', label: 'Vizir' },
+    // {page: 'help', label: 'Help'},
+    // {blog: false, label: 'Blog'},
+    { languages: true },
   ],
 
   // If you have users set above, you add it here:
-  users,
+  // users,
 
   /* path to images for header/footer */
   headerIcon: 'img/vizir-logo-new-white.png',
-  footerIcon: 'img/favicon.png',
+  footerIcon: 'img/vizir-logo-new-white.png',
   favicon: 'img/favicon.png',
 
   /* Colors for website */
@@ -57,20 +63,27 @@ const siteConfig = {
     primaryColor: '#3DBBD8',
     secondaryColor: '#e14d86',
   },
+  editUrl: 'https://github.com/vizirco/documentation/tree/master/docs/',
 
   /* Custom fonts for website */
-  /*
   fonts: {
     myFont: [
-      "Times New Roman",
-      "Serif"
+      "Rubik",
+      "Open Sans",
+      "Roboto",
+      "Arial"
     ],
     myOtherFont: [
       "-apple-system",
       "system-ui"
     ]
   },
-  */
+
+  algolia: {
+    apiKey: 'TIIN6CCFWV',
+    indexName: 'doc',
+    algoliaOptions: {} // Optional, if provided by Algolia
+  },
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
   copyright: `Copyright © ${new Date().getFullYear()} Vizir.co`,
