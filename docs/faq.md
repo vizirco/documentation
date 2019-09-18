@@ -1,8 +1,10 @@
 ---
-id: doc9
-title: This is Doc 9
+id: faq
+title: Frequently Asked Questions
+sidebar_label: FAQ
 ---
 
+## How to create a new FAQ file
 I can write content using [GitHub-flavored Markdown syntax](https://github.github.com/gfm/).
 
 ## Markdown Syntax
@@ -15,3 +17,14 @@ I can write content using [GitHub-flavored Markdown syntax](https://github.githu
 * Hey
 * Ho
 * Let's Go
+
+
+
+
+## When to use a Smart Resource
+
+## How to recolt several smart resource
+
+## Options
+
+##
